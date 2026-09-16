@@ -1,0 +1,25 @@
+NAYA — Dossier du site
+
+Contenu : code source React / TypeScript, styles, 20 images de silhouettes,
+catalogue de 200 déclinaisons, API de réservation et migrations de base de données.
+
+Installation : Node.js 22.13 ou supérieur et pnpm (version indiquée dans package.json).
+Depuis le dossier : pnpm install, puis pnpm dev.
+Compilation : pnpm build.
+
+Ce projet est une application serveur, pas une page HTML à ouvrir par double-clic.
+Les réservations nécessitent une base Cloudflare D1 liée sous le nom DB, avec les
+migrations du dossier drizzle appliquées. Les données de production ne sont pas
+incluses dans cette archive.
+
+L’authentification de l’espace administrateur utilise actuellement les services
+Sites / ChatGPT et autorise le compte silueemmanuel93@gmail.com. Un hébergement
+indépendant nécessite une adaptation de cette authentification : ne pas faire
+confiance à des en-têtes d’identité fournis directement par un visiteur.
+
+Domaine : l’adresse du site dépend de l’hébergement et du DNS, pas du nom du dossier.
+Un domaine personnalisé que vous possédez peut remplacer l’adresse actuelle.
+Le domaine n’a pas été changé par cet export.
+
+Le fichier .openai/hosting.json conserve l’identifiant du site existant.
+Les dépendances node_modules, caches, secrets, et historique Git sont exclus.

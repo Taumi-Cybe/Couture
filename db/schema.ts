@@ -1,0 +1,3 @@
+import {sqliteTable,text,integer,uniqueIndex} from 'drizzle-orm/sqlite-core';
+export const orders=sqliteTable('orders',{id:text('id').primaryKey(),code:text('code').notNull().unique(),model:integer('model').notNull(),name:text('name').notNull(),email:text('email').notNull(),phone:text('phone').notNull(),notes:text('notes').notNull().default(''),date:text('date').notNull(),time:text('time').notNull(),pickup:text('pickup').notNull(),status:integer('status').notNull().default(0)},t=>[uniqueIndex('orders_slot').on(t.date,t.time)]);
+export const blocked=sqliteTable('blocked',{date:text('date').primaryKey()});

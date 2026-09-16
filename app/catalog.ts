@@ -1,0 +1,5 @@
+export const bases = ['Robe sirène','Robe à volants','Boubou signature','Ensemble jupe','Tunique à col officier','Ensemble brodé','Robe épaules volantées','Kaftan fluide','Ensemble décontracté','Robe de cérémonie','Robe évasée','Tunique plastron','Robe asymétrique','Grand boubou','Ensemble jupe péplum','Costume contemporain','Robe à étages','Boubou brodé','Robe drapée','Kaftan signature'];
+export const fabrics=['Wax','Lin','Bazin','Coton','Soie','Pagne tissé','Jacquard','Satin','Bogolan','Dentelle'];
+export const models=Array.from({length:200},(_,i)=>({id:i+1,name:bases[i%20],fabric:fabrics[Math.floor(i/20)],gender:[2,4,5,8,11,13,15,17].includes(i%20)?'Homme':'Femme',image:`/images/model-${i%20+1}.webp`,ref:`NY-${String(i+1).padStart(3,'0')}`,detail:['Coupe ajustée, finitions soignées.','Volume souple et tombé naturel.','Lignes épurées et détails travaillés.'][i%3]}));
+export const stages=['Rendez-vous confirmé','Mesures prises','En confection','Essayage','Prête à récupérer','Récupérée'];
+export const times=['09:00','10:00','11:00','14:00','15:00','16:00','17:00'];
