@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: naya-atelier
+    runtime: node
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm db:migrate && pnpm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: SITE_URL
+        sync: false
+      - key: ATELIER_TIMEZONE
+        value: Europe/Paris
+      - key: TRUST_RENDER_PROXY
+        value: "true"

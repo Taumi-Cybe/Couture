@@ -1,0 +1,6 @@
+Vérifications du 16 septembre 2026
+Compilation production Next.js + TypeScript : réussie.
+Migrations dans PostgreSQL embarqué PGlite : réussies.
+Protection des créneaux actifs, libération après annulation, rejet de reconfirmation en conflit : réussis.
+Conservation explication et prix ; refus SQL au rôle anon : réussis.
+Limites : aucune base Supabase ni instance Render du propriétaire connectée. Authentification réelle MFA et déploiement externe à vérifier avec ces comptes. Test HTTP local non conclu. Vérification visuelle automatisée bloquée par la politique du navigateur pour les fichiers locaux. Le fichier d’aperçu contient les composants React réels et des données fictives en mémoire.

@@ -4,9 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "NAYA — Couture sur mesure",
   description: "Découvrez 200 inspirations de couture, réservez votre rendez-vous et suivez votre création.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
